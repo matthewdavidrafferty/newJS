@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .margin {
+            margin-bottom: 45px;
+        }
+        
+        .bg-1 {
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+        
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+        
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+        
+        .bg-4 {
+            background-color: #2f2f2f;
+            /* Black Gray */
+            color: #fff;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+        /* The sidebar menu */
+        
+        .sidebar {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidebar */
+        }
+        /* The sidebar links */
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        /* When you mouse over the navigation links, change their color */
+        
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        /* Position and style the close button (top right corner) */
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        /* The button used to open the sidebar */
+        
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+        
+        .openbtn:hover {
+            background-color: #444;
+        }
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        
+        #main {
+            transition: margin-left .5s;
+            /* If you want a transition effect */
+            padding: 20px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="nav-link" href="Chapter 4/Chapter4.html">Bubbles</a>
+            <a class="nav-link" href="Chapter 5/Chapter5.html">Things I Like</a>
+            <a class="nav-link" href="Chapter 6/Chapter6.html">Douglas the Robot</a>
+            <a class="nav-link" href="Chapter 7/Chapter7.html">Animated Robot</a>
+            <a class="nav-link" href="Chapter 8/Chapter8.html">Dream Car</a>
+            <a class="nav-link" href="Chapter 9/Chapter9.html">Super Calculator</a>
+            <a class="nav-link" href="Chapter 10/Chapter10.html">Replacing Words</a>
+            <a class="nav-link" href="Chapter 12/Chapter12.html">Animated Train</a>
+            <a class="nav-link" href="Chapter 13/Chapter13.html">My Wishlist</a>
+            <a class="nav-link" href="Chapter 14/Chapter14.html">Activity of the Day</a>
+            <a class="nav-link" href="Chapter 15/Chapter15.html">Pizzeria</a>
+            <a class="nav-link" href="Chapter 16/Chapter16.html">Word Game</a>
+            <a class="nav-link" href="Chapter 17/Chapter17.html">Weather Forecase</a>
+            <a class="nav-link" href="Chapter 18/Chapter18.html">Lunch Game</a>
+            <a class="nav-link" href="Shopping Cart/shopStart.html">Shopping Cart</a>
+            <a class="nav-link" href="Hangman/Hangman.html">Hangman</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">Work Completed</button>
+        </div>
+    </nav>
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center" style="background-image:url('Landscape.jfif')">
+
+        <h3 class="margin">
+            <B>Who Am I? </B> </h3>
+        <div style="text-align:right;"> What do I do for fun?
+            <p> Motorcycling </p>
+            <p> Playstation Gaming </p>
+            <p> Socialising </p>
+            <p> Learning JS! </p>
+
+        </div>
+        <img src="flag.jfif" style="transform: rotate(315deg)" width="150">
+        <img src="bike.jfif" class="img-responsive img-circle margin" style="display:inline" width="350" height="350">
+        <img src="flag.jfif" style="transform: rotate(45deg)" width="150">
+        <h3> <b>Matthew Rafferty </b> </h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center" style="background-color: #111">
+        <h3 class="margin">About Me</h3>
+        <p>I am a Supply Chain Analytics Professional who is learning to write code in JavaScript, HTML and CSS with the help of Code College</p>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    </footer>
+
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+#o {
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bubble {
+    border: 1px solid #abda29;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+body {
+    background-color: #2154B2;
+}
+
+footer {
+    background-color: aqua;
+}
